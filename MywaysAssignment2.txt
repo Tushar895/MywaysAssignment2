@@ -1,0 +1,169 @@
+
+//Request Body
+  
+perl
+{
+ "name": "Tushar Jain",
+ "email": "tushar.tca1909015@tmu.ac.in",
+ "password": "password123"
+}
+
+
+
+// Response
+    
+   json
+   {
+     "token":"sadjgCBlgdygefbkfdfgygfkejfheufefjdfkwewgfdsfbdiedvhuffvevn"
+   }
+
+
+
+
+//request body
+
+perl{
+
+ "email": "tushar.tca1909015@tmu.ac.in",
+ "password": "password123"
+}
+
+
+
+//json
+ { 
+   "token":"sadjgCBlgdygefbkfdfgygfkejfheufefjdfkwewgfdsfbdiedvhuffvevn"
+ }
+
+
+
+// Request Headers
+
+Authorization: Bearer <JWT>
+
+
+
+// Response
+     Status 200 ok
+
+     Status 401 Unauthorized
+
+
+
+
+//javascript
+    
+    const bcrypt = require('bcrypt);
+    const saltRound = 10;
+    const plaintextPassword = 'password123';
+    bcrypt.hash(plaintextPassword, saltRound, function(err,hash){
+
+     // stores hash in your password DB.
+   });
+
+
+
+
+
+
+//To verify a password  you can use the 'bcrypt.compare' method:
+
+
+   const bcript=  require('bcrypt');
+   const plaintextPassword = 'password123';
+   const hashedPassword='....';   // retrived from database
+
+   bcrypt.compare(plaintextPassword,hashedPassword, function(err,result){
+    if(result == true){
+     //password matched
+      }else{
+           
+           //password don't match
+           }
+});
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
